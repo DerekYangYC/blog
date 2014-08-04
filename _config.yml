@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: TechYC
 subtitle:
 description:
-author: John Doe
+author: Derek.YC
 email:
 language:
 
@@ -80,7 +80,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: hexo-theme/Tinny
 exclude_generator:
 
 # Deployment
