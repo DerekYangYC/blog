@@ -5,3 +5,5 @@ debug.log
 node_modules/
 public/
 .deploy/
+themes/hexo-theme/.git
+themes/pacman/.git
