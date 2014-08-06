@@ -3,7 +3,7 @@ date: 2014-08-06 14:27:00
 tags: [hexo]
 ---
 
-最近觉得用`markdown`来写点东西，是个相当愉快的过程，因此萌生了搭一个支持`markdown`的博客。比较来比较去，觉得`github`+`Hexo`比较方便快捷，而且够geek。
+最近觉得用`markdown`来写点东西，是个相当愉快的过程，因此萌生了搭一个支持`markdown`的博客。比较来比较去，觉得`github`+`hexo`比较方便快捷，而且够geek。
 
 ##安装
 
@@ -83,6 +83,29 @@ git push -u origin master
 
 这样，在另外一台机器上只需要`clone`这个`repo`，然后进行修改再`push`回`github`，即可。
 
+
+##多说
+
+我用的皮肤[Tinny](https://github.com/zhanglun/hexo-theme/tree/master/Tinny)，已经从`disqus`改成`多说`；但这不意味着马上能用。
+
+- 首先得去多说注册，并创建网站
+- 然后获得`通用代码`
+- 然后在`_config.yml`和`comment.ejs`下，更改对应的`short_name`
+
+![](/img/duoshuo.png)
+
+这样多说才能使用。否则，使用别人的皮肤容易也把多说的`short_name`也一并使用，会造成评论乱入，自己的博客下出现不属于自己的评论。
+
+
+自此，博客才算基本搭好；一旦单搭好了博客，写东西可谓赏心悦目。
+
+参考：
+
+[http://syxiaqj.github.io/2014/02/19/introduce-hexo-theme/](http://syxiaqj.github.io/2014/02/19/introduce-hexo-theme/)
+
+[http://ibruce.info/2013/11/22/hexo-your-blog/](http://ibruce.info/2013/11/22/hexo-your-blog/)
+
+[http://zipperary.com/categories/hexo/](http://zipperary.com/categories/hexo/)
 
 
   [1]: https://github.com/hexojs/hexo/issues/632
