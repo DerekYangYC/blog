@@ -53,10 +53,35 @@ $ hexo s
 $ hexo d
 ```
 
+个人觉得，每次`hexo g`前都`clean`一下，比较好
 
 
 ##同步
 
+通过`hexo deploy`可以将本地博客部署到`github`上。
+在部署前，根据上面`repo`的位置，新建一个`repo`：`derekyangyc.github.io`
+
+每次部署，都会把`hexo`目录下的`public`文件夹，推送到`derekyangyc.github.io`这个`repo`
+
+因为我的机器常使用`github`，这里省略了`ssh`的设置，详细可以看[这里](https://help.github.com/articles/generating-ssh-keys)
+
+但这样并不能解决在多台机器写博客的问题，因为`derekyangyc.github.io`上仅仅存的是`hexo`的`public`文件夹。
+
+解决的问题的方法有两个：
+
+1. 利用`dropbox`等同步软件同步整个目录，但这样并不好。因为`public`等文件夹的文件经常改动，会引起不必要的同步。
+2. 利用`github`保存整个`blog`目录。
+
+```bash
+$ cd blog
+git init
+git add .
+git commit -m "add all files"
+git remote add origin git@github.com:derekyangyc/blog.git
+git push -u origin master
+```
+
+这样，在另外一台机器上只需要`clone`这个`repo`，然后进行修改再`push`回`github`，即可。
 
 
 
