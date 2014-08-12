@@ -7,7 +7,7 @@ tags: [hexo]
 
 ##安装
 
-由于我在在windows使用`hexo`，安装过程也略微叙述一下。安装`hexo`需要用到`git`和`node.js`，`git`和`node.js`的安装很简单，下载对应版本，一路next即可。`linux`命令行环境的模拟，可以利用`git shell`和`ConEmu`解决。
+由于我在windows使用`hexo`，安装过程也略微叙述一下。安装`hexo`需要用到`git`和`node.js`，`git`和`node.js`的安装很简单，下载对应版本，一路next即可。`linux`命令行环境的模拟，可以利用`git bash`和`ConEmu`解决。
 
 完成以后，输入如下命令即可安装`hexo`
 
@@ -74,11 +74,11 @@ $ hexo d
 
 ```bash
 $ cd blog
-git init
-git add .
-git commit -m "add all files"
-git remote add origin git@github.com:derekyangyc/blog.git
-git push -u origin master
+$ git init
+$ git add .
+$ git commit -m "add all files"
+$ git remote add origin git@github.com:derekyangyc/blog.git
+$ git push -u origin master
 ```
 
 这样，在另外一台机器上只需要`clone`这个`repo`，然后进行修改再`push`回`github`，即可。
